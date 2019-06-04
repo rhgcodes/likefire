@@ -1,0 +1,12 @@
+.page-wrapper {
+    background-color: #210002;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul.navbar {
+    background-color: #210002;
+    position: absolute;
+}
