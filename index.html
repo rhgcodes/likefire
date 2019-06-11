@@ -2,62 +2,60 @@
 <html>
 
 <head>
-    <title>Piggeon Hills</title>
+    <title>Hanover PA!</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="page-wrapper">
 
-        <!-- Header -->
-        <ul class="navbar">
-            <li id="town-name"><a href="#">Hanover, PA</a></li>
-            <li id="nav-safety"><a href="#">Safety</a></li>
-            <li id="nav-blog"><a href="#">Blog</a></li>
-            <li id="nav-contact"><a href="#">Contact</a>
-            <li id="nav-newsletter"><a href="#">Newsletter</a></li>
-        </ul>
-        <!-- End Header -->
+        <!-- Navbar -->
+        <nav class="">
+            <a id="nav-name" href="index.html">Hanover</a>
+            <div id="rightnav">
+                <a id="nav-about" href="about.html">About</a>
+                <a id="nav-blog" href="#blog">Blog</a>
+                <a id="nav-contact" href="#contact">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Navbar End -->
 
         <!-- Top Art -->
-        <div class="topart" id=parallax>
-            <img src="Images/PiggeonHillsTop.jpg" alt="" style="width:800px;height:550px;">
+        <div class="parallax">
+            <img src="Images/parallax.png">
         </div>
         <!-- Top Art End / Parallax needed -->
 
-        <!-- Main Container -->
-
         <!-- Pricing and Options -->
-        <div class="main-body">
-            <div class="main">
-                <div class="section price">
-                    <em>Tours Available now for $9.99</em>
-                </div>
-                <div class="col-md-6">
-                    <div class="buttons">
-                        <button type="button" class="btn btn-outline-warning">Bike</button>
-                        <button type="button" class="btn btn-outline-warning">Hikes</button>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="buttons">
-                        <button type="button" class="btn btn-outline-warning">Helicopter</button>
-                        <button type="button" class="btn btn-outline-warning">Plane</button>
-                    </div>
-                </div>
-            </div>
+        <div class="section-price">
+            <em>Tours Available Now Starting $9.99</em>
         </div>
         <!-- Pricing and Options End  -->
 
+        <!-- Tour types -->
+        <div class="tourbuttons">
+            <button class="tourtypes">Hiking</button>
+            <button class="tourtypes">Biking</button>
+            <br>
+            <button class="tourtypes">Bus Tour</button>
+            <button class="tourtypes">Plane</button>
+        </div>
+        <!-- Tour types end -->
+
         <!-- Video -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/knygW5OKnVg" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="hanover-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/knygW5OKnVg" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
         <!-- Video End -->
 
         <!-- About Hanover -->
-        <div class="section description">
+        <div class="section-description">
             <h2>
                 Hanover is a borough in York County, Pennsylvania, 19 miles (31 km) southwest of York and 54 miles (87
                 km) north-northwest of Baltimore, Maryland and is 5 miles (8.0 km) north of the Mason-Dixon line.
@@ -66,7 +64,7 @@
         </div>
         <div>
             <div class="columntext">
-                <p class="left">
+                <p id="left">
                     In 1727, John Digges, an Irish nobleman of Prince George's County, Maryland, obtained a grant of
                     10,000 acres (40 km2) of land where Hanover is now located from Charles Calvert, the fourth Lord
                     Baltimore. The area was called Digges Choice, and in 1730, a group of Catholics started the
@@ -78,16 +76,15 @@
                     Pennsylvania hired British experts Charles Mason and Jeremiah Dixon to survey what became known as
                     the Mason–Dixon Line.
                 </p>
-                <p>
+                <p id="right">
                     In 1745, a Scot-Irishman named Richard McAllister purchased the tract of land upon which the
                     original town of Hanover was built. McAllister was a Presbyterian who had recently migrated from the
                     Cumberland Valley. Hanover at that time was covered with a dense forest of hickory, walnut, and oak
                     trees. McAllister erected a log house at what is now the corner of Baltimore and Middle streets, and
                     opened a store and tavern. In 1763, McAllister divided his farm into lots and founded the town of
                     Hanover. German settlers nicknamed the settlement "Hickory Town" after the thick groves of hickory
-                    trees that grew in the area. The name Hanover was suggested by Michael Tanner, who was one of the
-                    commissioners who laid out York County in 1749 and owned large tracts of land southeast of the town.
-                    Tanner's choice of the name came from the fact that he was a native of Hannover, Germany. The town's
+                    trees that grew in the area.Tanner's choice of the name came from the fact that he was a native of
+                    Hannover, Germany. The town's
                     founders, who wanted to please the German settlers, agreed to the name. Hanover was also sometimes
                     referred to as "McAllister's Town" in its early years.
                 </p>
@@ -95,75 +92,54 @@
         </div>
         <!-- About Hanover End -->
 
-        <!-- Bottom Page Section -->
-        <div class="bottom-page">
-            <div class="buttons">
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-outline-warning">merchandise</button>
-                </div>
-                <div class="col-md-6">
-                    <div class="buttons">
-                        <button type="button" class="btn btn-outline-warning">Pictures</button>
-                        <button type="button" class="btn btn-outline-warning">Hanover FAQ</button>
-                    </div>
-                </div>
-            </div>
-            <div class="section pictures">
-                <ul class="thumbnails">
-                    <li>
-                        <a href="#"><img alt="Famous Wiener" src="Images/2014 1128 hnvr 2031.jpg"
-                                style="width:300px;height:300px;"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img alt="Hanover Sign"
-                                src="Images/84b53d10334317c97e6c955f46dce9fd--pennsylvania-giveaways.jpg"
-                                style="width:300px;height:300px;"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img alt="Hanover Markets" src="Images/c3bda58eb37f6fd67862db6ce46acd26.jpg"
-                                style="width:300px;height:300px;"></a>
-                    </li>
-                    <li>
-                        <a href="#"><img alt="Mason Sign" src="Images/cfiles43187.jpg"
-                                style="width:300px;height:300px;"></a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Bottom Page Buttons -->
+        <div class="tourbuttons">
+            <button class="tourtypes">Marchandise</button>
+            <button class="tourtypes">Pictures</button>
+            <br>
+            <button class="tourtypes">Hanover FAQ</button>
         </div>
+        <!-- Bottom Page Buttons End -->
 
-        <div class="section pressquote big">
-            <h2>
-                Beautiful small town!
-            </h2>
+        <!-- Bottom Pictures -->
+        <div class="hanoverpics">
+            <img src="Images/Screen Shot 2019-06-11 at 2.12.14 PM.png" class="img-fluid" alt="Responsive image">
+            <img src="Images/hanover-residences-1.jpg" class="img-fluid" alt="Responsive image">
+            <img src="Images/shutterstock_442761016.jpg" class="img-fluid" alt="Responsive image">
+        </div>
+        <!-- Bottom Pictures End -->
+
+        <!-- Quote -->
+        <div class="section-pressquote">
+            <h1>
+                "Beautiful small town!"
+            </h1>
+        </div>
+        <div class="pressquotee">
             <h3>
-                Somebody who lives in the town
+                - somebody dude from town
             </h3>
         </div>
+        <!-- Quote End -->
 
-        <div class="section support">
-            <div class="col-md-6">
-                <button type="button" class="btn btn-outline-warning">Support</button>
-            </div>
-            <div class="col-md-6">
-                <button type="button" class="btn btn-outline-warning">Visit Today</button>
-            </div>
+        <div class="bottombuttons">
+            <button class="tourtypes" id="supportbutton">Support</button>
+            <img src="Images/kissclipart-pennsylvania-heart-clipart-pennsylvania-sticker-he-6c16b452acbbcc93.png"
+                id="paseal">
+            <button class="tourtypes" id="visitbutton">Visit Today</button>
         </div>
-        <div class="section copyright">
-            <p>©<span id="year">2019</span> Coulson Technologies</p>
-        </div>
-        <div>
-            <div class="section companylinks">
-                <ul class="companies">
-                    <li class="Hanover"><a href="#">
-                            <h1>Hanover</h1>
-                        </a></li>
-                    <li class="PA"><a href="#">
-                            <h1>PA</h1>
-                        </a></li>
-                </ul>
+
+        <br>
+
+        <footer>
+            <div class="copyright">
+                <a target="_blank" id="coulson" href="https://coulsontechnologies.com/">© 2019 Coulson Technologies</a>
             </div>
-        </div>
+        </footer>
+    </div>
 
 </body>
 
 </html>
+
+<script src="main.js"></script>
