@@ -133,6 +133,26 @@ nav a:hover {
     text-decoration: none !important;
 }
 
-.sitefooter {
+/* About Page */
+
+.welcome {
     text-align: center;
+    color: #ffaf00;
+    padding-top: 50px;
+}
+
+.giflove {
+    text-align: center;
+    color: #ffaf00;
+    padding-top: 50px;
+}
+
+#time {
+    font-size: 8rem;
+}
+
+@media (max-width: 700px) {
+    #time {
+        font-size: 6rem;
+    }
 }
