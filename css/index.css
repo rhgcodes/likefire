@@ -141,10 +141,16 @@ nav a:hover {
     padding-top: 50px;
 }
 
-.giflove {
+.hanoverPopulation {
     text-align: center;
     color: #ffaf00;
-    padding-top: 50px;
+    padding-top: 25px;
+}
+
+.aboutHanover {
+    text-align: center;
+    color: #ffaf00;
+    padding: 25px 100px;
 }
 
 #time {

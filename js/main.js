@@ -31,4 +31,23 @@ function checkTime(i) {
         i = "0" + i
     }; // add zero in front of numbers < 10
     return i;
-};
+}
+
+var populationGame = [
+    [1820, 946],
+    [1840, 1070],
+    [1860, 1630],
+    [1880, 2317],
+    [1900, 5320],
+    [1920, 8664],
+    [1940, 13076],
+    [1960, 15538],
+    [1980, 14890],
+    [2000, 14535]
+];
+
+console.log(populationGame[0]);
+
+var randomYear = yearOptions[Math.floor(Math.random()*yearOptions.length)];
+// console.log(randomYear);
+document.getElementById('year').innerHTML = "In the year " + randomYear + " Hanover's population was";
