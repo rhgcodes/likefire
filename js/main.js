@@ -31,23 +31,55 @@ function checkTime(i) {
         i = "0" + i
     }; // add zero in front of numbers < 10
     return i;
-}
+};
 
 var populationGame = [
-    [1820, 946],
-    [1840, 1070],
-    [1860, 1630],
-    [1880, 2317],
-    [1900, 5320],
-    [1920, 8664],
-    [1940, 13076],
-    [1960, 15538],
-    [1980, 14890],
-    [2000, 14535]
+    [1820, 946, 511, 1488, 0],
+    [1840, 1070, 1090, 2568, 2490],
+    [1860, 1630, 1569, 2389, 1893],
+    [1880, 2317, 2133, 2093, 3670],
+    [1900, 5320, 5120, 7288, 6873],
+    [1920, 8664, 9832, 11834, 12852],
+    [1940, 13076, 12993, 13419, 14782],
+    [1960, 15538, 15902, 16386, 17452],
+    [1980, 14890, 14123, 15736, 16294],
+    [2000, 14535, 14762, 15982, 16201]
 ];
 
-console.log(populationGame[0]);
+var random = Math.floor(Math.random() * populationGame.length);
+var question = populationGame[random][0]; //random question 
+var answerA = populationGame[random][1];
+var answerB = populationGame[random][2];
+var answerC = populationGame[random][3];
+var answerD = populationGame[random][4];
 
-var randomYear = yearOptions[Math.floor(Math.random()*yearOptions.length)];
-// console.log(randomYear);
-document.getElementById('year').innerHTML = "In the year " + randomYear + " Hanover's population was";
+//Choose a random question with relative answers from the array
+function randomize() {
+    random = Math.floor(Math.random() * populationGame.length);
+    question = populationGame[random][0]; //random question 
+    answerA = populationGame[random][1];
+    answerB = populationGame[random][2];
+    answerC = populationGame[random][3];
+    answerD = populationGame[random][4];
+}
+
+//Display one question at a time with relative answer out of 15 random questions
+function renderQuestions() {
+    var test = document.getElementById("test");
+    var questionNumber = 1;
+    test.innerHTML = "<div id='question'>" + questionNumber++ + ")" + question + "</div>";
+    test.innerHTML += "<div id='answerA'><button onclick='next()' value='A' name='choices'>" + "(a) " + answerA + "</button></div>";
+    test.innerHTML += "<div><button onclick='next()' value='B' name='choices'>" + "(b) " + answerB + "</button></div>";
+    test.innerHTML += "<div><button onclick='next()' value='C' name='choices'>" + "(c) " + answerC + "</button></div>";
+    test.innerHTML += "<div><button onclick='next()' value='D' name='choices'>" + "(d) " + answerD + "</button></div>";
+}
+
+randomize();
+renderQuestions();
+
+//question
+//When the answer is clicked next question is rendered randomly
+function next() {
+    randomize();
+    renderQuestions();
+};
