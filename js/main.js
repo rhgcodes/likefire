@@ -63,15 +63,15 @@ function randomize() {
     answerD = populationGame[random][4];
 }
 
-//Display one question at a time with relative answer out of 15 random questions
+//Display one question at a time with relative answer
 function renderQuestions() {
     var test = document.getElementById("test");
     var questionNumber = 1;
     test.innerHTML = "<div id='question'>" + questionNumber++ + ")" + question + "</div>";
-    test.innerHTML += "<div id='answerA'><button onclick='next()' value='A' name='choices'>" + "(a) " + answerA + "</button></div>";
-    test.innerHTML += "<div><button onclick='next()' value='B' name='choices'>" + "(b) " + answerB + "</button></div>";
-    test.innerHTML += "<div><button onclick='next()' value='C' name='choices'>" + "(c) " + answerC + "</button></div>";
-    test.innerHTML += "<div><button onclick='next()' value='D' name='choices'>" + "(d) " + answerD + "</button></div>";
+    test.innerHTML += "<div id='answerA'><button id='correct' onclick='next(this.id)' value='A' name='choices'>" + "(a) " + answerA + "</button></div>";
+    test.innerHTML += "<div><button id='wrong' onclick='next(this.id)' value='B' name='choices'>" + "(b) " + answerB + "</button></div>";
+    test.innerHTML += "<div><button id='wrong' onclick='next(this.id)' value='C' name='choices'>" + "(c) " + answerC + "</button></div>";
+    test.innerHTML += "<div><button id='wrong' onclick='next(this.id)' value='D' name='choices'>" + "(d) " + answerD + "</button></div>";
 }
 
 randomize();
@@ -80,6 +80,7 @@ renderQuestions();
 //question
 //When the answer is clicked next question is rendered randomly
 function next() {
+    alert('Correct!')
     randomize();
     renderQuestions();
 };

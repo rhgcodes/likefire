@@ -162,3 +162,11 @@ nav a:hover {
         font-size: 6rem;
     }
 }
+
+/* Contact Page */
+
+.contactform {
+    text-align: center;
+    color: #ffaf00;
+    padding: 25px 100px;
+}
