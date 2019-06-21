@@ -1,6 +1,7 @@
 .page-wrapper {
     background-color: #210002;
     position: absolute;
+    min-height: 100%;
     margin: 0;
     padding: 0;
     border: 0;
